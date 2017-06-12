@@ -41,7 +41,7 @@
             android:layout_marginTop="2dp"
             android:gravity="center_horizontal"
             android:text="Try again, later"
-            android:textColor="@color/common_plus_signin_btn_text_light_default"
+            android:textColor="#000"
             android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout>

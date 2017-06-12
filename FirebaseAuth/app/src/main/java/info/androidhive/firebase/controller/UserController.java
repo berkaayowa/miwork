@@ -10,6 +10,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
 import info.androidhive.firebase.domain.User;
 
 /**
@@ -22,11 +23,15 @@ public class UserController {
     private FirebaseAuth auth;
     private Activity activity;
     private boolean isRegistered;
-    private int num;
+   // private DatabaseReference databaseReference;
+  //  private FirebaseDatabase database;
 
     public UserController(Activity activity) {
         this.auth = FirebaseAuth.getInstance();
         this.activity = activity;
+
+       // database = FirebaseDatabase.getInstance();
+        //this.databaseReference = database.getReference().child("users");
     }
 
     public User login(String email, String password, final UserCallBack userCallBack) {
@@ -46,27 +51,23 @@ public class UserController {
         return null;
     }
 
-    public boolean register(String email, String password, final UserCallBack userCallBack) {
+    public void register(String email, String password, final UserCallBack userCallBack) {
         isRegistered = false;
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(activity, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
-                        // If sign in fails, display a message to the user. If sign in succeeds
-                        // the auth state listener will be notified and logic to handle the
-                        // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
                             userCallBack.isSuccess(false);
                         } else {
+                           // databaseReference.child("name").setValue("berka");
+                           // databaseReference.child("surname").setValue("ayowa");
                             userCallBack.isSuccess(true);
                         }
                     }
                 });
 
-        Log.e("number --> ", String.valueOf(num));
-
-        return isRegistered;
     }
 
     public User getCurrentUser() {
