@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Loan_history"
+        android:title="@string/category_phrases"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/My_Profile"
+        android:title="@string/category_colors"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/About_Us"
+        android:title="@string/category_numbers"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/logout"
+        android:title="@string/category_logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+
+</menu>
