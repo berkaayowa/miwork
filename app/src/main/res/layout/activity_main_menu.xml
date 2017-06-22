@@ -34,10 +34,10 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView15"
+                        android:id="@+id/txtMenuTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Hi Berka Ayowa | 0219171312"
+                        android:text="Hi User name | cellphone"
                         android:textColor="@color/miwok_main"
                         android:textSize="17sp"
                         android:textStyle="bold" />

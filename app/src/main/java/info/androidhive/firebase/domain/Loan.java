@@ -1,10 +1,12 @@
 package info.androidhive.firebase.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by berka on 6/10/17.
  */
 
-public class Loan {
+public class Loan implements Serializable{
 
     private int loanId;
     private String employmentStatus, paymentTerms;

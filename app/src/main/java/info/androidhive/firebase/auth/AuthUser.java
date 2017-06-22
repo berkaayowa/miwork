@@ -118,9 +118,48 @@ public class AuthUser {
             }
         };
 
-//        request.setRetryPolicy(new DefaultRetryPolicy(20000,
-//                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-//                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        requestQueue.add(request);
+    }
+
+    public void verification(final String[] data, final ApiStringRequest callback ) {
+        StringRequest request = new StringRequest(1,AppSetting.USER_URL_VERIFICATION,
+                new Response.Listener<String>()
+                {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            callback.onSuccess(response);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            Log.d("Error--> : ", e.getMessage());
+                        }
+                    }
+                },
+                new Response.ErrorListener()
+                {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        callback.onConnectingError(error);
+                        Log.d("Error.Response", error.getMessage());
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<String, String>();
+                params.put("user_phone", data[0]);
+                params.put("user_code", data[1]);
+                return params;
+            }
+
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/x-www-form-urlencoded");
+                return headers;
+            }
+        };
 
         requestQueue.add(request);
     }

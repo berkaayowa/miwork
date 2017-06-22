@@ -1,10 +1,12 @@
 package info.androidhive.firebase.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by berka on 6/10/17.
  */
 
-public class Contact {
+public class Contact implements Serializable{
 
     private int contactId;
     private String cellPhone, emailAddress;

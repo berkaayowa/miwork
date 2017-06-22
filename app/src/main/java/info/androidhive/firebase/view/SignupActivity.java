@@ -116,7 +116,7 @@ public class SignupActivity extends AppCompatActivity {
                                 if (jsonObj.has("success")) {
                                     alert("successReg");
                                 } else {
-//                                    alert("error");
+                                    alert("error");
                                 }
                                 Log.e("error::->", jsonObj.getString("message"));
                             }
@@ -149,7 +149,7 @@ public class SignupActivity extends AppCompatActivity {
 
     public void confirmPhone(View view) {
         Intent viewConfirmPhone = new Intent(this, ConfirmPhone.class);
-        viewConfirmPhone.putExtra("options","");
+        viewConfirmPhone.putExtra("message", edtPhone.getText().toString().trim());
         this.startActivity(viewConfirmPhone);
     }
 

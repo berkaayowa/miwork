@@ -114,12 +114,14 @@ public class LoginActivity extends AppCompatActivity {
                                 if (user != null) {
                                     if (user.isPhoneVerified()) {
                                         Intent viewLogin = new Intent(getApplicationContext(), MainMenu.class);
+                                        viewLogin.putExtra("user", user);
+                                        viewLogin.putExtra("type", "user");
                                         viewLogin.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                         getApplicationContext().startActivity(viewLogin);
                                     } else {
 
                                         Intent viewConfirmPhone = new Intent(getApplicationContext(), ConfirmPhone.class);
-                                        viewConfirmPhone.putExtra("message","Code sent to " +user.getContact().getCellPhone());
+                                        viewConfirmPhone.putExtra("message",user.getContact().getCellPhone());
                                         viewConfirmPhone.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                         getApplicationContext().startActivity(viewConfirmPhone);
                                     }

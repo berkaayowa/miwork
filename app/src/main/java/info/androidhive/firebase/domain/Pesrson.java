@@ -1,10 +1,12 @@
 package info.androidhive.firebase.domain;
 
+import java.io.Serializable;
+
 /**
  * Created by berka on 6/10/17.
  */
 
-public abstract class Pesrson {
+public abstract class Pesrson implements Serializable{
 
     private String name, surname;
     private Contact contact;

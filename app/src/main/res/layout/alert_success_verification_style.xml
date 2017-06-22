@@ -17,14 +17,24 @@
         android:paddingTop="10dp">
 
         <TextView
-            android:id="@+id/txtrTitle"
+            android:id="@+id/txtScTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Opp! invalid credentials"
-            android:textColor="@android:color/holo_red_dark"
+            android:text="Phone number verification"
+            android:textColor="@color/miwok_main"
             android:textSize="21sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtScMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:text="Was Successufully"
+            android:textColor="@color/miwok_main"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView20"
@@ -40,19 +50,21 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
-            android:text="Email or password is invalid"
-            android:textColor="@color/input_register_hint" />
+            android:onClick="gotToMenu"
+            android:text="Press continue to go to the menu"
+            android:textColor="@color/miwok_main" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_second_style"
-            android:text="Try Again"
+            android:onClick="gotToMenu"
+            android:text="Continue"
             android:textAllCaps="false"
             android:textColor="@color/btn_login_bg"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:visibility="gone" />
+            android:visibility="visible" />
     </LinearLayout>
 </LinearLayout>

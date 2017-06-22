@@ -71,14 +71,14 @@
                 android:background="@color/underline" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/edtCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/input_style"
                 android:ems="10"
+                android:hint="Code"
                 android:inputType="textPersonName|number"
-                android:text="Code"
                 android:textColor="@color/input_register_hint"
                 android:textColorHint="@color/input_register_hint" />
 
@@ -87,6 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_second_style"
+                android:onClick="confirm"
                 android:text="Confirm "
                 android:textAllCaps="false"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
