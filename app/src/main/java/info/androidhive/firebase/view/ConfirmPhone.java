@@ -37,7 +37,7 @@ public class ConfirmPhone extends AppCompatActivity {
 
         txtMessage = (TextView) findViewById(R.id.txtMessage);
         edtCode = (EditText) findViewById(R.id.edtCode);
-        txtError = (TextView) findViewById(R.id.txtErrorMs);
+//        txtError = (TextView) findViewById(R.id.txtErrorMs);
 
 
         Bundle extras = getIntent().getExtras();

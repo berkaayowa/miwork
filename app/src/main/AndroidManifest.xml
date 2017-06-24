@@ -28,10 +28,6 @@
             android:name=".view.SignupActivity"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".view.ResetPasswordActivity"
-            android:label="@string/title_activity_reset_password"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".view.LoanHistory" />
         <activity android:name=".view.Aboutus" />
         <activity android:name=".view.Myprofile" />
