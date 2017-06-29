@@ -24,7 +24,7 @@ import info.androidhive.firebase.auth.callback.AuthUserCallBack;
 import info.androidhive.firebase.common.Display;
 import info.androidhive.firebase.common.ErrorAlert;
 import info.androidhive.firebase.common.Validation;
-import info.androidhive.firebase.controller.UserCallBack;
+import info.androidhive.firebase.controller.callback.UserCallBack;
 import info.androidhive.firebase.controller.UserController;
 import info.androidhive.firebase.domain.User;
 import info.androidhive.firebase.view.ConfirmPhone;
@@ -52,6 +52,8 @@ public class LoginActivity extends AppCompatActivity {
         btnSignup = (Button) findViewById(R.id.btn_signup);
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnReset = (Button) findViewById(R.id.btn_reset_password);
+
+        alert("startup");
 
     }
 

@@ -1,7 +1,6 @@
-package info.androidhive.firebase.controller;
+package info.androidhive.firebase.controller.callback;
 
 import org.json.JSONException;
-
 import info.androidhive.firebase.auth.callback.CallBack;
 
 /**

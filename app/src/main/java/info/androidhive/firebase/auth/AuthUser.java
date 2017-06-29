@@ -12,7 +12,6 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -22,7 +21,7 @@ import java.util.Map;
 import info.androidhive.firebase.auth.callback.AuthUserCallBack;
 import info.androidhive.firebase.auth.entityparse.EntityParse;
 import info.androidhive.firebase.config.AppSetting;
-import info.androidhive.firebase.controller.ApiStringRequest;
+import info.androidhive.firebase.controller.callback.ApiStringRequest;
 
 /**
  * Created by berka on 6/16/17.

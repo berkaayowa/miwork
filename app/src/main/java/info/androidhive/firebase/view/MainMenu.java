@@ -37,6 +37,7 @@ public class MainMenu extends AppCompatActivity {
     public void LoanHistory(View view) {
         Intent viewLoanHistory = new Intent(this, LoanHistory.class);
         viewLoanHistory.putExtra("options","");
+        viewLoanHistory.putExtra("user", user);
         this.startActivity(viewLoanHistory);
     }
 

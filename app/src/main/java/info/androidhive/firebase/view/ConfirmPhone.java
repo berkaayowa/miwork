@@ -1,10 +1,7 @@
 package info.androidhive.firebase.view;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,7 +19,7 @@ import info.androidhive.firebase.auth.AuthUser;
 import info.androidhive.firebase.common.Display;
 import info.androidhive.firebase.common.ErrorAlert;
 import info.androidhive.firebase.common.Validation;
-import info.androidhive.firebase.controller.ApiStringRequest;
+import info.androidhive.firebase.controller.callback.ApiStringRequest;
 
 public class ConfirmPhone extends AppCompatActivity {
 

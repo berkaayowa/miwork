@@ -1,6 +1,7 @@
 package info.androidhive.firebase.factory;
 
 import info.androidhive.firebase.domain.Contact;
+import info.androidhive.firebase.domain.Loan;
 import info.androidhive.firebase.domain.User;
 
 /**
@@ -15,5 +16,9 @@ public class Factory {
 
     public static Contact createContactObject(String cellPhone, String emailAddress) {
         return new Contact(cellPhone, emailAddress);
+    }
+
+    public static Loan createLoanObject(double loanAmount, String date, String status) {
+        return new Loan(loanAmount, date, status);
     }
 }

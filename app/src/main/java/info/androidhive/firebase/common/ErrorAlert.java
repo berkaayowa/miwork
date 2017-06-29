@@ -37,8 +37,10 @@ public class ErrorAlert extends AlertDialog.Builder {
             setView(inflater.inflate(R.layout.alert_invalid_user_style, null));
         } else if(alert.equalsIgnoreCase("default")) {
             setView(inflater.inflate(R.layout.alert_confrim_error_style, null));
-        } if(alert.equalsIgnoreCase("successVerification")) {
+        } else if(alert.equalsIgnoreCase("successVerification")) {
             setView(inflater.inflate(R.layout.alert_success_verification_style, null));
+        } else if(alert.equalsIgnoreCase("startup")) {
+            setView(inflater.inflate(R.layout.alert_startup_style, null));
         }
 
 

@@ -9,7 +9,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import info.androidhive.firebase.controller.UserCallBack;
+import info.androidhive.firebase.controller.callback.UserCallBack;
 
 /**
  * Created by berka on 6/15/17.

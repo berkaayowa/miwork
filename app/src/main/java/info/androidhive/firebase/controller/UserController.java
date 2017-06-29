@@ -4,6 +4,7 @@ import android.app.Activity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import info.androidhive.firebase.auth.AuthFirebase;
+import info.androidhive.firebase.controller.callback.UserCallBack;
 import info.androidhive.firebase.domain.User;
 
 /**

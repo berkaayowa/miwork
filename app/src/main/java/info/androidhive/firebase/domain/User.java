@@ -6,7 +6,7 @@ package info.androidhive.firebase.domain;
 
 public class User extends Pesrson{
 
-    private String userID;
+    private String userID, userKey;
     private boolean isPhoneVerified;
 
     public User(String userID, String name, String surname) {
@@ -28,5 +28,13 @@ public class User extends Pesrson{
 
     public void setPhoneVerified(boolean phoneVerified) {
         isPhoneVerified = phoneVerified;
+    }
+
+    public String getUserKey() {
+        return userKey;
+    }
+
+    public void setUserKey(String userKey) {
+        this.userKey = userKey;
     }
 }

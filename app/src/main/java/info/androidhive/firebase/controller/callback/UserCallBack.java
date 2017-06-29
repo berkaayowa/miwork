@@ -1,4 +1,4 @@
-package info.androidhive.firebase.controller;
+package info.androidhive.firebase.controller.callback;
 
 /**
  * Created by berka on 6/11/17.

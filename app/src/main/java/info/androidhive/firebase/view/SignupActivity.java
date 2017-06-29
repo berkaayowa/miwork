@@ -7,31 +7,25 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 
 import com.android.volley.VolleyError;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import info.androidhive.firebase.R;
 import info.androidhive.firebase.auth.AuthUser;
-import info.androidhive.firebase.auth.callback.AuthUserCallBack;
 import info.androidhive.firebase.common.Display;
 import info.androidhive.firebase.common.ErrorAlert;
 import info.androidhive.firebase.common.Validation;
-import info.androidhive.firebase.controller.ApiStringRequest;
-import info.androidhive.firebase.controller.UserCallBack;
+import info.androidhive.firebase.controller.callback.ApiStringRequest;
+import info.androidhive.firebase.controller.callback.UserCallBack;
 import info.androidhive.firebase.controller.UserController;
-import info.androidhive.firebase.domain.User;
 import info.androidhive.firebase.services.UserService;
 
 public class SignupActivity extends AppCompatActivity {
