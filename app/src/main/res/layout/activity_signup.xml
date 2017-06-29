@@ -57,8 +57,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:background="@drawable/input_style"
-            android:hint="Phone"
-            android:inputType="textEmailAddress"
+            android:hint="E.g : 2771725223"
+            android:inputType="textEmailAddress|number"
             android:maxLines="1"
             android:singleLine="true"
             android:textColor="@color/miwok_text" />
